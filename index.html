@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Snake</title>
+    
+    <style type="text/css">
+       * { margin:0px; padding:0px; }
+       body { width:500px; margin:0px auto; }
+       #snake { margin: 10px 0px; }
+       a { color:white; text-decoration:none; }
+       a:hover { text-decoration:underline; }
+    </style>
+  </head>
+  <body>
+    <div id="snake">
+	  <canvas width="500px" id="canvas" height="600px"/>
+	</div>
+	<script src="snake.js"></script>
+	<script>
+		var wrapper = document.getElementById('snake');
+		SNAKE.init(wrapper);
+	</script>
+  </body>
+</html>
